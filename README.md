@@ -32,22 +32,26 @@ A secure authentication and authorization system built with Node.js, Express, an
 ## Authentication Flow
 
 ### 1. Login
-![Login API Response](src\img\register.png)
+![Login API Response](https://github.com/Chandrateja1212/RBAC-Project/raw/main/src/img/register.png)
+
 - Send POST request to `/api/auth/login` with username and password
 - Receive JWT token upon successful authentication
 - Token includes user role and permissions
 
 ### 2. Access Protected Resources
-![Manager Access](src\img\login.png)
+![Manager Access](https://github.com/Chandrateja1212/RBAC-Project/raw/main/src/img/login.png)
+
 - Include JWT token in Authorization header
 - Server validates token and role
 - Access granted based on user's role
 
 ### 3. Logout
-![Logout Response](src\img\logout.png)
+![Logout Response](https://github.com/Chandrateja1212/RBAC-Project/raw/main/src/img/logout.png)
+
 - Send POST request to `/api/auth/logout`
 - Server invalidates the session
 - User is successfully logged out
+
 
 ## Security Features
 
